@@ -1,0 +1,477 @@
+/* Estilos Globais */
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.9);
+    z-index: 1000;
+    padding: 0 60px; /* Aumentado o padding lateral */
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 68px;
+}
+
+.logo {
+    height: 35px;
+    margin-right: 25px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    font-size: 0.9rem;
+    font-weight: normal; /* Netflix usa peso normal para links não ativos */
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #b3b3b3;
+}
+
+.nav-extras {
+    margin-left: auto; /* Empurra para a direita */
+    display: flex;
+    align-items: center;
+}
+
+.nav-extras .search-icon,
+.nav-extras .notification-icon,
+.nav-extras .profile-avatar,
+.nav-extras .dropdown-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.nav-extras .search-icon img,
+.nav-extras .notification-icon img,
+.nav-extras .dropdown-arrow img {
+    height: 20px;
+    width: 20px;
+}
+
+.nav-extras .profile-avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+}
+
+.nav-extras span {
+    font-size: 0.9rem;
+    margin-left: 20px;
+}
+
+.profile-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+/* Banner Principal (Hero) */
+.hero-banner {
+    height: 80vh; /* Altura do banner */
+    background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 1) 100%), url('hero-background.jpg'); /* Imagem de fundo placeholder */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    padding-left: 60px;
+    padding-top: 68px; /* Para compensar o header fixo */
+}
+
+.hero-content {
+    max-width: 40%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.hero-buttons button {
+    padding: 10px 25px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.hero-buttons .play-button {
+    background-color: #fff;
+    color: #000;
+}
+
+.hero-buttons .play-button img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.hero-buttons .info-button {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: #fff;
+}
+
+.hero-buttons .info-button img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.hero-buttons .play-button:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.hero-buttons .info-button:hover {
+    background-color: rgba(109, 109, 110, 0.4);
+}
+
+/* Carrossel de Conteúdo */
+.content-carousel {
+    padding: 20px 60px;
+}
+
+.content-carousel h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: auto; /* Permite scroll horizontal */
+    overflow-y: hidden;
+    padding-bottom: 20px; /* Espaço para a barra de rolagem não cobrir os cards */
+}
+
+/* Estilização da barra de rolagem (opcional, para melhor aparência) */
+.carousel-items::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel-items::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.carousel-items::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.carousel-item {
+    min-width: 220px; /* Largura dos cards */
+    height: 124px;  /* Altura dos cards (proporção 16:9) */
+    margin-right: 10px;
+    background-color: #333; /* Cor de placeholder */
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    /* Adicionar mais estilos de hover, como informações do título */
+}
+
+/* Rodapé */
+footer {
+    padding: 50px 60px;
+    margin-top: 50px;
+    background-color: #141414; /* Mesmo fundo do body, pode ser sutilmente diferente */
+    color: #808080; /* Cor de texto mais clara para o rodapé */
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+    max-width: 1000px; /* Limita a largura da grade de links */
+}
+
+.footer-links a {
+    font-size: 0.8rem;
+    color: #808080;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 0.75rem;
+}
+
+
+
+/* Media Queries para Responsividade */
+
+/* Tablets e Dispositivos Menores (<= 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .nav-links li {
+        margin-right: 15px;
+    }
+
+    .nav-links li a {
+        font-size: 0.8rem;
+    }
+
+    .nav-extras .search-icon,
+    .nav-extras .notification-icon,
+    .nav-extras .profile-avatar,
+    .nav-extras .dropdown-arrow {
+        margin-left: 15px;
+    }
+
+    .nav-extras span {
+        display: none; /* Ocultar texto 'INFANTIL' em telas menores */
+    }
+
+    .hero-banner {
+        padding-left: 20px;
+        height: 70vh;
+    }
+
+    .hero-content {
+        max-width: 60%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-buttons button {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+
+    .content-carousel {
+        padding: 20px 20px;
+    }
+
+    .content-carousel h2 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-item {
+        min-width: 180px;
+        height: 101px; /* Mantendo proporção 16:9 */
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        padding: 0 20px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+}
+
+/* Celulares (<= 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        height: 56px;
+    }
+
+    .logo {
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .nav-links {
+        /* Em telas muito pequenas, pode ser necessário um menu hambúrguer */
+        /* Por simplicidade, vamos apenas reduzir mais os espaçamentos */
+        /* ou ocultar alguns links se necessário */
+        display: none; /* Exemplo: ocultar links principais e mostrar apenas logo e ícones */
+    }
+    
+    /* Se os nav-links forem ocultados, precisamos de um botão de menu */
+    /* .menu-toggle { display: block; } */
+
+    .nav-extras .search-icon img,
+    .nav-extras .notification-icon img,
+    .nav-extras .dropdown-arrow img {
+        height: 18px;
+        width: 18px;
+    }
+    
+    .nav-extras .profile-avatar {
+        height: 28px;
+        width: 28px;
+    }
+
+    .hero-banner {
+        padding-top: 56px; /* Altura do novo header */
+        height: 60vh;
+        text-align: center; /* Centralizar texto no banner */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero-content {
+        max-width: 90%;
+        margin: 0 auto; /* Centralizar conteúdo do banner */
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+        display: none; /* Opcional: ocultar descrição em telas muito pequenas */
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column; /* Empilhar botões */
+        align-items: center;
+    }
+
+    .hero-buttons button {
+        width: 80%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .content-carousel {
+        padding: 15px 10px;
+    }
+
+    .content-carousel h2 {
+        font-size: 1.1rem;
+        margin-left: 5px; /* Pequeno ajuste para alinhar com os cards */
+    }
+
+    .carousel-item {
+        min-width: 150px;
+        height: 84px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas no máximo */
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+
+
+
+
+/* Estilos para as setas do Carrossel */
+.carousel-items-container {
+    position: relative; /* Necessário para posicionar as setas absolutamente */
+    overflow: hidden; /* Esconde o overflow dos itens do carrossel */
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(20, 20, 20, 0.7);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    line-height: 1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+    background-color: rgba(20, 20, 20, 0.9);
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.next-arrow {
+    right: 10px;
+}
+
+/* Ajuste para o .carousel-items não ter scrollbar visível, já que usaremos JS */
+.carousel-items {
+    display: flex;
+    overflow-x: hidden; /* Será controlado por JS, remove scrollbar padrão */
+    scroll-behavior: smooth; /* Para animação suave do scroll com JS */
+    padding-bottom: 0; /* Remover padding se não houver scrollbar */
+}
+
+.carousel-items::-webkit-scrollbar {
+    display: none; /* Esconder scrollbar no Chrome/Safari */
+}
+
+.carousel-items {
+    -ms-overflow-style: none;  /* Esconder scrollbar no IE/Edge */
+    scrollbar-width: none;  /* Esconder scrollbar no Firefox */
+}
