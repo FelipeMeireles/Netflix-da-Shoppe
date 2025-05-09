@@ -37,7 +37,7 @@ header {
 }
 
 .logo {
-    height: 35px;
+    height: 63px;
     margin-right: 25px;
 }
 
@@ -98,6 +98,8 @@ header {
     display: flex;
     align-items: center;
 }
+
+
 
 /* Banner Principal (Hero) */
 .hero-banner {
