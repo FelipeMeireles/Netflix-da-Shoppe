@@ -500,3 +500,21 @@ footer p {
     -ms-overflow-style: none;  /* Esconder scrollbar no IE/Edge */
     scrollbar-width: none;  /* Esconder scrollbar no Firefox */
 }
+
+.filme {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px;
+  transition: transform 0.3s;
+}
+
+.filme img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.filme:hover {
+  transform: scale(1.05);
+}
