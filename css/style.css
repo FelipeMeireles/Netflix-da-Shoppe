@@ -349,14 +349,8 @@ footer p {
     }
 
     .nav-links {
-        /* Em telas muito pequenas, pode ser necessário um menu hambúrguer */
-        /* Por simplicidade, vamos apenas reduzir mais os espaçamentos */
-        /* ou ocultar alguns links se necessário */
-        display: none; /* Exemplo: ocultar links principais e mostrar apenas logo e ícones */
+        display: none; /*ocultar links principais e mostrar apenas logo e ícones */
     }
-    
-    /* Se os nav-links forem ocultados, precisamos de um botão de menu */
-    /* .menu-toggle { display: block; } */
 
     .nav-extras .profile-avatar {
         height: 28px;
@@ -382,7 +376,7 @@ footer p {
 
     .hero-content p {
         font-size: 0.9rem;
-        display: none; /* Opcional: ocultar descrição em telas muito pequenas */
+        display: none; /* ocultar descrição em telas muito pequenas */
     }
 
     .hero-buttons {
