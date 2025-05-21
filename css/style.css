@@ -459,7 +459,7 @@ footer p {
     right: 10px;
 }
 
-/* Ajuste para o .carousel-items não ter scrollbar visível, já que usaremos JS */
+/* Ajuste para o .carousel-items não ter scrollbar visível, já que usei JS */
 .carousel-items {
     display: flex;
     overflow-x: hidden; /* Será controlado por JS, remove scrollbar padrão */
@@ -469,11 +469,6 @@ footer p {
 
 .carousel-items::-webkit-scrollbar {
     display: none; /* Esconder scrollbar no Chrome/Safari */
-}
-
-.carousel-items {
-    -ms-overflow-style: none;  /* Esconder scrollbar no IE/Edge */
-    scrollbar-width: none;  /* Esconder scrollbar no Firefox */
 }
 
 .filme {
