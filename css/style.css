@@ -236,7 +236,9 @@ header {
     /* Adicionar mais estilos de hover, como informações do título */
 }
 
+
 /* Rodapé */
+
 footer {
     padding: 50px 60px;
     margin-top: 50px;
@@ -459,7 +461,7 @@ footer p {
     right: 10px;
 }
 
-/* Ajuste para o .carousel-items não ter scrollbar visível, já que usei JS */
+/* Ajustei para o .carousel-items não ter scrollbar visível, já que usei JS */
 .carousel-items {
     display: flex;
     overflow-x: hidden; /* Será controlado por JS, remove scrollbar padrão */
@@ -472,17 +474,8 @@ footer p {
 }
 
 /* Parte do Lucas */
-.main-content {
-  padding: 20px 40px;
-}
-
 .movie-row {
   margin-bottom: 40px;
-}
-
-.row-title {
-  font-size: 22px;
-  margin-bottom: 15px;
 }
 
 .movie-slider {
@@ -499,28 +492,6 @@ footer p {
 .movie-slider::-webkit-scrollbar-thumb {
   background: #e50914;
   border-radius: 4px;
-}
-
-.movie-card {
-  flex: 0 0 auto;
-  width: 300px;
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.movie-card img {
-  width: 100%;
-  display: block;
-  height: auto;
-  border-radius: 4px;
-}
-
-.movie-card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
-  z-index: 2;
 }
 
 /* Aba Séries */
