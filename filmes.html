@@ -12,6 +12,7 @@
             <img src="/images/logo.png" alt="Netflix Logo" class="logo">
             <ul class="nav-links">
                 <li><a href="/index.html">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="#">Séries</a></li>
                 <li><a href="filmes.html">Filmes</a></li>
                 <li><a href="#">Bombando</a></li>
@@ -19,16 +20,40 @@
             </ul>
       </header>
   <main class="main-content">      
+            <div class="nav-extras">
+                <form class="search-form" onsubmit="return false;">
+                    <input type="search" class="search-input" placeholder="Títulos, pessoas e gêneros">
+                    <img src="/images/search.png" class="search-img" alt="Pesquisar">
+                </form>
+                <span class="ocultar">INFANTIL</span>
+                <button class="notification-icon"><img src="/images/icon-notification.png" alt="Notificações"></button>
+                <div class="profile-dropdown">
+                    <button class="dropdown-arrow"><img src="/images/profile-avatar.png" alt="Avatar do Perfil" class="profile-avatar"></button>
+                </div>
+            </div>
+        </header>
+  <main class="main-content">     
+    <section class="hero-banner" style="background-image: linear-gradient(to bottom, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 1) 100%), url('images/netflix\ hero.jpg');">
+            <div class="hero-content">
+                <h1>Título do Filme ou Série em Destaque</h1>
+                <p>Breve descrição do filme ou série. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="hero-buttons">
+                    <button class="play-button"><img src="/images/play-fill.svg" alt="Play"> Assistir</button>
+                    <button class="info-button"><img src="/images/info-circle.svg" alt="Info"> Mais informações</button>
+                </div>
+            </div>
+        </section>
+         
     <section class="movie-row">
         <div class="movie-slider">
         <div class="filme"><img src="images/filmes/filme1.webp" alt="Filme 1"></div>
-        <div class="filme"><img src="images/filmes/filme2.webp" alt="Filme 2"></div>
+        <div class="filme"><img src="images/filmes/filme2.jpg" alt="Filme 2"></div>
         <div class="filme"><img src="images/filmes/filme3.webp" alt="Filme 3"></div>
         <div class="filme"><img src="images/filmes/filme4.webp" alt="Filme 4"></div>
         <div class="filme"><img src="images/filmes/filme5.webp" alt="Filme 5"></div>
         <div class="filme"><img src="images/filmes/filme6.webp" alt="Filme 6"></div>
-        <div class="filme"><img src="images/filmes/filme7.webp" alt="Filme 7"></div>
-        <div class="filme"><img src="images/filmes/filme8.webp" alt="Filme 8"></div>
+        <div class="filme"><img src="images/filmes/filme7.jpg" alt="Filme 7"></div>
+        <div class="filme"><img src="images/filmes/filme8.jpg" alt="Filme 8"></div>
       </div>
     </section>
   </main>
