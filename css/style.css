@@ -572,17 +572,6 @@ footer p {
     background-color: rgba(109, 109, 110, 0.4);
 } 
 
-.series1 {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.series1:hover {
-    transform: scale(1.2);
-}
-
-
-
 /*Narcos aba*/
 
 .aba {
