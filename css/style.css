@@ -572,3 +572,40 @@ footer p {
     background-color: rgba(109, 109, 110, 0.4);
 } 
 
+.series1 {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.series1:hover {
+    transform: scale(1.2);
+}
+
+
+
+/*Narcos aba*/
+
+.aba {
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.aba h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aba p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.aba2 {
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
