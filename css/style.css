@@ -24,7 +24,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(20, 20, 20, 0.9);
+    background-color: rgba(20, 20, 20, 0.9); /*navbar*/
     z-index: 1000;
     padding: 0 60px; /* Aumentado o padding lateral */
     box-sizing: border-box;
@@ -195,7 +195,7 @@ header {
     padding: 20px 60px;
 }
 
-.content-carousel h2 {
+.content-carousel h2 { 
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 15px;
@@ -204,7 +204,7 @@ header {
 .carousel-items {
     display: flex;
     overflow-x: auto; /* Permite scroll horizontal */
-    overflow-y: hidden;
+    overflow-y: hidden; /* O conteúdo que excede o espaço do contêiner é ocultado, ou seja, não é visível. */
     padding-bottom: 20px; /* Espaço para a barra de rolagem não cobrir os cards */
 }
 
@@ -312,6 +312,7 @@ footer {
     gap: 15px;
     margin-bottom: 30px;
     max-width: 1000px; /* Limita a largura da grade de links */
+    /* max-width: 55%; Outra forma de limitar */
 }
 
 .footer-links a {
