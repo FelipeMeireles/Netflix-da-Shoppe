@@ -479,24 +479,6 @@ footer p {
     }
 }
 
-/* Parte do Lucas 
-
-.movie-slider {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 10px;
-}
-
-.movie-slider::-webkit-scrollbar {
-  height: 8px;
-}
-.movie-slider::-webkit-scrollbar-thumb {
-  background: #e50914;
-  border-radius: 4px;
-} */
-
 /* Aba Séries */
 
 /* Banner Principal */
