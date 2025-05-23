@@ -1,3 +1,5 @@
+    // Inicialização e Seleção de Elementos
+
 document.addEventListener("DOMContentLoaded", function() {
     const carousels = document.querySelectorAll(".content-carousel");
 
@@ -11,6 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
+    // --------------------------------------------------------
+
+    // Cálculo Dinâmico de Dimensões
+
         const firstItem = itemsContainer.querySelector(".carousel-item");
         // Estime itemWidth incluindo margem. Assume que todos os itens têm largura semelhante.
         // The CSS has .carousel-item { margin-right: 10px; }
@@ -19,6 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
         // Adjust scrollStep to be a multiple of itemWidthWithMargin, e.g., scroll 3-5 items
         // Or, scroll by a percentage of the container's width
         const scrollStep = itemWidthWithMargin * 3; // Scroll by approx 3 items
+
+    // =========================================================
+
+    // Navegação "Próximo" com Loop Infinito
 
         nextButton.addEventListener("click", () => {
             const currentScroll = itemsContainer.scrollLeft;
@@ -43,6 +53,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
             }
         });
+
+
+    // -----------------------------------------------------------------
+
+    // Navegação "Anterior" com Loop Infinito
 
         prevButton.addEventListener("click", () => {
             const currentScroll = itemsContainer.scrollLeft;
